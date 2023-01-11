@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Reserveren</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap');
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Roboto&display=swap');
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Lobster&family=Merriweather:wght@300&display=swap');
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+    </style>
+</head>
+
+
+<body>
+    
+<!-- CIRCLE -->
+    <div class="circle"></div>
+    <section class="circle-text">
+        <h1 class="head-text">Daya's Hairsalon</h1>
+        <h2 class="sub-text">Hair & Beauty</h2> 
+    </section>
+
+<!-- ABOUT -->
+    <section id ="about">
+        <h2 class=" about-title">Hi, I am Dayanara and this is what do!</h2>
+        <p class="about-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum consequuntur alias repellendus accusamus ipsa placeat sit maxime id adipisci. Similique in dicta quidem laborum nulla molestiae quo iste eos laudantium?</p>
+    </section>
+
+<!-- ABOUT BUTTON -->
+    <section class="about-button">
+        <button id ="button" onclick="displayForm()">Klik hier voor een afspraak</button>
+    </section>
+
+<!-- FORM -->
+    <section id="form">
+        <form method="POST" action="">
+            <div class="form-content">
+            <div class="form-txt">Maak een afspraak</div>
+            <section class="slide-downs">
+<!-- HAARSTIJL -->
+                <div class="sld-dwn1">
+                    <select name="hairstyle" class="hairstyle">
+                        <option>kies je stijl</option>
+                        <optgroup value="boxbraids" label="Boxbraids">
+                            <option value="dun-boxbraids">(dun) boxbraids</option>
+                            <option value="medium-boxbraids">(medium) boxbraids</option>
+                            <option value="dik-boxbraids">(dik) boxbraids</option>
+                        <optgroup value="knotless-braids" label="Knotless braids">
+                            <option value="dun-klbraids"> (dun) Knotless braids</option>
+                            <option value="medium-klbraids"> (medium) Knotless braids</option>
+                            <option value="dik-klbraids"> (dik) Knotless braids</option>
+                        <optgroup value="braids" label="Braids">
+                            <option value="lemonade-s"> Lemonade S</option>
+                            <option value="lemonade-m"> Lemonade M</option>
+                            <option value="fulani-s"> Fulani S</option>
+                            <option value="fulani-m"> Fulani M</option>
+                        <optgroup value="cornrows" label="Cornrows">
+                            <option value="2-cornrows"> 2 Cornrows</option>
+                            <option value="4-cornrows"> 4 Cornrows</option>
+                            <option value="6-cornrows"> 6 Cornrows</option>
+                            <option value="8-cornrows"> 8 Cornrows</option>
+                            <option value="10-cornrows">10 Cornrows</option>
+                            <option value="12-cornrows">12 Cornrows</option>
+                            <option value="12+cornrows">12+ Cornrows</option>
+                        <optgroup value="ponytail" label="Ponytail">
+                            <option value="1-vlecht"> Eén vlecht</option>
+                            <option value="Weave"> Weave</option>
+                            <option value="braids"> Braids</option>
+                        <optgroup value="men-braids" label="Men braids">
+                            <option value="cornrows"> Cornrows</option>
+                            <option value="boxbraids"> Boxbraids</option>
+                            <option value="twist"> Twist</option>
+                    </select>
+                </div>
+
+ <!-- HAARLENGTE -->
+                <div class="sld-dwn2">
+
+                    <select name="hairlength" class="length">
+                        <option> kies je lengte</option>
+                        <option value="kort"> kort</option>
+                        <option value="medium"> medium</option>
+                        <option value="lang"> lang</option>
+                        <option value="extra-lang"> extra lang</option>
+                    </select>
+                </div>
+            </section>
+
+<!--SERVER SIDE VALIDATION -->
+            <section class="form-validation">
+                    <div class="date">
+                        <input type="date" id="date" name="date">
+                    </div>
+                    <div class="time">
+                        <input type="time" id="time" name="time">
+                    </div>
+                    <div class="reservation-info">
+                        <input type="text" placeholder="Voornaam" name="voornaam">
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Achternaam" name="achternaam">
+                    </div>
+                    <div>
+                        <input type="email" placeholder="Email" name="email">
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Telefoonnummer" name="telefoon">
+                    </div>
+                    <div>
+                        <button class="btn-apoint" name="submit">Maak Afspraak</button>
+                    </div>
+            </section>
+            </div>
+        </form>
+    </section>
+<script language="JavaScript" type="text/javascript"  src="app.js"></script>
+</body>
+
+
+</html>
